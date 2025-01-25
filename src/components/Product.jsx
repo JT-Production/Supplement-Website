@@ -14,15 +14,15 @@ const Product = () => {
   };
   return (
     <section className="flex justify-center ">
-      <div className=" text-white py-5">
+      <div className=" text-white py-5 ">
         <div className="my-8">
           <h1 className="text-5xl font-bold text-center">Order Our Product</h1>
           <p className="font-monts text-[15px] font-thin text-center">
             This is the only way to get this product in discount.
           </p>
         </div>
-        <div className="grid grid-cols-2 gap-4 ">
-          <div className="flex ">
+        <div className="grid lg:grid-cols-2 gap-4 ">
+          <div className="flex mx-auto">
             <div className="me-3">
               <img
                 src={product1}
@@ -58,17 +58,17 @@ const Product = () => {
 
             <div className="">
               {image === "Image-1" ? (
-                <img src={product1} alt="" className="h-[450px] rounded-lg" />
+                <img src={product1} alt="" className="lg:h-[450px] rounded-lg  h-[350px]" />
               ) : image === "Image-2" ? (
-                <img src={product2} alt="" className="h-[450px] rounded-lg" />
+                <img src={product2} alt="" className="lg:h-[450px] rounded-lg h-[350px]" />
               ) : image === "Image-3" ? (
-                <img src={product3} alt="" className="h-[450px] rounded-lg" />
+                <img src={product3} alt="" className="lg:h-[450px] rounded-lg h-[350px]" />
               ) : (
                 none
               )}
             </div>
           </div>
-          <div className="w-[490px]">
+          <div className="lg:w-[490px] px-4">
             <div className="flex ">
               <FaStar className="text-orange-500" />
               <FaStar className="text-orange-500" />

@@ -31,17 +31,25 @@ const ProductDetails = () => {
   };
 
   return (
-    <div className="container-lg">
+    <div className="container-lg ">
       <div className="flex py-2">
         <h1
           onClick={showContent}
-          className={displayContent === false ? "text-[23px] font-bold me-4 text-cyan-500 cursor-pointer" : "text-[23px] font-bold me-4 cursor-pointer" }
+          className={
+            displayContent === false
+              ? "text-[23px] font-bold me-4 text-cyan-500 cursor-pointer"
+              : "text-[23px] font-bold me-4 cursor-pointer"
+          }
         >
           Description
         </h1>
         <h1
           onClick={showContent}
-          className={displayContent === true ? "text-[23px] font-bold me-4 text-cyan-500 cursor-pointer" : "text-[23px] font-bold me-4 cursor-pointer" }
+          className={
+            displayContent === true
+              ? "text-[23px] font-bold me-4 text-cyan-500 cursor-pointer"
+              : "text-[23px] font-bold me-4 cursor-pointer"
+          }
         >
           Reviews (2)
         </h1>
@@ -58,13 +66,7 @@ const ProductDetails = () => {
           sagittis lorem habi mattis empus oncu enim pellen. Pellen tesque este
           pretium in neque, elit morbi sagittis lorem habi mattis empus .
         </p>
-        <div 
-          className={
-            !displayContent
-              ? "hidden"
-              : "block"
-          }
-        >
+        <div className={!displayContent ? "hidden " : "block "}>
           {reviews.map((review, index) => {
             return (
               <div key={index} className="flex py-3">
@@ -87,61 +89,62 @@ const ProductDetails = () => {
               </div>
             );
           })}
-       
 
-        <div className="">
-          <h1 className="text-2xl">Add a review</h1>
-          <p className="text-[15px] font-thin font-monts">
-            Your email address will not be published. Required fields are marked
-            *
-          </p>
+          <div className="">
+            <h1 className="text-2xl">Add a review</h1>
+            <p className="text-[15px] font-thin font-monts">
+              Your email address will not be published. Required fields are
+              marked *
+            </p>
 
-          <p className="text-[16px] font-thin font-monts pt-3">Your rating *</p>
-          <div className="flex ">
-            <FaStar className="text-zinc-500" />
-            <FaStar className="text-zinc-500" />
-            <FaStar className="text-zinc-500" />
-            <FaStar className="text-zinc-500" />
-            <FaStar className="text-zinc-500" />
-          </div>
-          <input type="file" className="py-3" />
-          <form action="" className="py-4">
-            <div className="flex">
-              <input
-                type="text"
-                placeholder="Full Name"
-                className="bg-black border py-2 me-2 px-2 w-[220px] border-zinc-800 active:border-zinc-800  focus:outline-none focus:border-white placeholder:text-neutral-600"
-              />
-              <input
-                type="email"
-                placeholder="Email"
-                className="bg-black border py-2 me-4 px-2 w-[220px] border-zinc-800 active:border-zinc-800  focus:outline-none focus:border-white placeholder:text-neutral-600"
-              />
-            </div>
-            <div className="flex justify-start py-2 ">
-              <textarea
-                name="message"
-                id=""
-                placeholder="Message"
-                className="lg:w-[450px] h-20 bg-black border py-2 me-4 px-2  border-zinc-800 active:border-zinc-800  focus:outline-none focus:border-white placeholder:text-neutral-600"
-              ></textarea>
-            </div>
+            <p className="text-[16px] font-thin font-monts pt-3">
+              Your rating *
+            </p>
             <div className="flex ">
-              <input
-                type="checkbox"
-                name=""
-                id=""
-                className="self-center h-2"
-              />
-              <p className="text-[14px] font-monts font-thin">
-                Save my name, email, and website in this browser for the next
-                time.
-              </p>
+              <FaStar className="text-zinc-500" />
+              <FaStar className="text-zinc-500" />
+              <FaStar className="text-zinc-500" />
+              <FaStar className="text-zinc-500" />
+              <FaStar className="text-zinc-500" />
             </div>
+            <input type="file" className="py-3" />
+            <form action="" className="py-4">
+              <div className="flex">
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  className="bg-black border py-2 me-2 px-2 w-[220px] border-zinc-800 active:border-zinc-800  focus:outline-none focus:border-white placeholder:text-neutral-600"
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  className="bg-black border py-2 me-4 px-2 w-[220px] border-zinc-800 active:border-zinc-800  focus:outline-none focus:border-white placeholder:text-neutral-600"
+                />
+              </div>
+              <div className="flex justify-start py-2 ">
+                <textarea
+                  name="message"
+                  id=""
+                  placeholder="Message"
+                  className="lg:w-[450px] h-20 bg-black border py-2 me-4 px-2  border-zinc-800 active:border-zinc-800  focus:outline-none focus:border-white placeholder:text-neutral-600"
+                ></textarea>
+              </div>
+              <div className="flex ">
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  className="self-center h-2"
+                />
+                <p className="text-[14px] font-monts font-thin">
+                  Save my name, email, and website in this browser for the next
+                  time.
+                </p>
+              </div>
 
-            <Button text={"Submit"} />
-          </form>
-        </div>
+              <Button text={"Submit"} />
+            </form>
+          </div>
         </div>
       </div>
     </div>
