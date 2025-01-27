@@ -30,8 +30,8 @@ const teamMembers = [
 const Team = () => {
   return (
     <section className="py-20">
-        <h1 className="text-center text-white text-5xl font-bold">Recommended by</h1>
-        <p className="text-white text-center font-monts text-[15px] font-thin pb-10">Suspen dise tempus oncu enim pellen teste pretium.</p>
+        <h1 className="text-center text-white lg:text-5xl font-bold text-3xl">Recommended by</h1>
+        <p className="text-white text-center font-monts lg:text-[15px] text-[13px] font-thin pb-10">Suspen dise tempus oncu enim pellen teste pretium.</p>
       <div className="flex justify-center py-5">
         
         <div className="grid lg:grid-cols-4 gap-4 px-20 md:grid-cols-4">

@@ -66,13 +66,13 @@ const ProductDetails = () => {
           sagittis lorem habi mattis empus oncu enim pellen. Pellen tesque este
           pretium in neque, elit morbi sagittis lorem habi mattis empus .
         </p>
-        <div className={!displayContent ? "hidden " : "block "}>
+        <div className={!displayContent ? "hidden" : "block "}>
           {reviews.map((review, index) => {
             return (
               <div key={index} className="flex py-3">
-                <img src={review.img} alt="" className="h-16 rounded-md" />
+                <img src={review.img} alt="" className="lg:h-16 rounded-md h-12" />
                 <div className="ms-2">
-                  <div className="flex ">
+                  <div className="flex">
                     <FaStar className="text-orange-500" />
                     <FaStar className="text-orange-500" />
                     <FaStar className="text-orange-500" />
@@ -84,13 +84,13 @@ const ProductDetails = () => {
                     <h1 className="text-md font-monts me-2">{review.name}</h1>
                     <p className="font-monts font-thin"> {review.date}</p>
                   </div>
-                  <p className="font-monts font-thin">{review.comment}</p>
+                  <p className="font-monts font-thin text-sm lg:text-md">{review.comment}</p>
                 </div>
               </div>
             );
           })}
 
-          <div className="">
+          <div className="px-3">
             <h1 className="text-2xl">Add a review</h1>
             <p className="text-[15px] font-thin font-monts">
               Your email address will not be published. Required fields are
@@ -113,12 +113,12 @@ const ProductDetails = () => {
                 <input
                   type="text"
                   placeholder="Full Name"
-                  className="bg-black border py-2 me-2 px-2 w-[220px] border-zinc-800 active:border-zinc-800  focus:outline-none focus:border-white placeholder:text-neutral-600"
+                  className="bg-black border py-2 me-2 px-2 lg:w-[220px]  w-[160px] border-zinc-800 active:border-zinc-800  focus:outline-none focus:border-white placeholder:text-neutral-600"
                 />
                 <input
                   type="email"
                   placeholder="Email"
-                  className="bg-black border py-2 me-4 px-2 w-[220px] border-zinc-800 active:border-zinc-800  focus:outline-none focus:border-white placeholder:text-neutral-600"
+                  className="bg-black border py-2 me-4 px-2 lg:w-[220px] w-[160px] border-zinc-800 active:border-zinc-800  focus:outline-none focus:border-white placeholder:text-neutral-600"
                 />
               </div>
               <div className="flex justify-start py-2 ">

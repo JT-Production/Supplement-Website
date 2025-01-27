@@ -10,7 +10,7 @@ const Hero = () => {
             <h1 className="lg:text-6xl/[1.2] text-5xl/[1.2]  font-bold   lg:mt-20 ">
               Pre Workout Supplements.
             </h1>
-            <p className="font-thin font-monts text-[15px]">
+            <p className="font-thin font-monts lg:text-[15px] text-[13px]">
               Write here about your product short description.
             </p>
             <button className="px-10 py-3 bg-cyan-600 rounded-full mt-5 font-monts text-black text-sm uppercase">

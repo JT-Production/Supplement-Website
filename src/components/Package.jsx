@@ -59,7 +59,7 @@ const Package = () => {
     <section className="flex justify-center text-center">
       <div className="text-white">
         <h1 className="text-white text-5xl font-bold">Choose your packages</h1>
-        <p className="font-monts text-[15px] font-thin pb-10">
+        <p className="font-monts lg:text-[15px] text-[13px] font-thin pb-10">
           Suspen dise tempus oncu enim pellen teste pretium.
         </p>
 
